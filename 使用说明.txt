@@ -1,0 +1,33 @@
+TextCleaner 跨平台使用说明
+
+一、支持的输入
+1. Markdown 文件（.md）
+2. PDF 文件（.pdf）
+3. 包含 Markdown/PDF 的整个文件夹
+
+Markdown 与 PDF 同名时，程序会使用 PDF 辅助核对内容。
+源文件不会被覆盖，结果统一保存在 output/cleaned。
+
+二、Windows
+首次使用：
+1. 安装 Python 3，安装时勾选“Add Python to PATH”。
+2. 双击 1_首次安装_Windows.bat，等待安装完成。
+
+以后使用：
+把 Markdown、PDF 或文件夹直接拖到 2_拖放清洗_Windows.bat 上。
+
+三、macOS
+首次使用：
+1. 双击 1_首次安装_macOS.command。
+2. 如果系统阻止打开，请右键该文件，选择“打开”。
+
+以后使用：
+把 Markdown、PDF 或文件夹直接拖到 TextCleaner.app 图标上。
+
+四、文件摆放建议
+也可以把待处理的 Markdown 放入 output/mineru_raw，
+把同名 PDF 放入 output/pdf_raw，然后把这两个文件夹一起拖到启动图标上。
+
+五、注意事项
+请保持本文件夹内部结构不变。整个 TextCleaner_Package 文件夹可以移动，
+但不要单独移动启动文件或 TextCleaner.app。
