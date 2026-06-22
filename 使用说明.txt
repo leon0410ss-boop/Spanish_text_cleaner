@@ -18,8 +18,9 @@ Markdown 与 PDF 同名时，程序会使用 PDF 辅助核对内容。
 
 三、macOS
 首次使用：
-1. 双击 1_首次安装_macOS.command。
-2. 如果系统阻止打开，请右键该文件，选择“打开”。
+1.将“解压至Spanish_text_cleaner-main”解压至“Spanish_text_cleaner-main”目录中
+2. 双击 1_首次安装_macOS.command。
+3. 如果系统阻止打开，请右键该文件，选择“打开”。
 
 以后使用：
 把 Markdown、PDF 或文件夹直接拖到 TextCleaner.app 图标上。
