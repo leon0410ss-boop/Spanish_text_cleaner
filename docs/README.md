@@ -1,5 +1,15 @@
 # TextCleaner
 
+<p align="center">
+
+[![中文](https://img.shields.io/badge/🇨🇳-中文-red?style=for-the-badge)](README.md)
+
+[![English](https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge)](README_EN.md)
+
+[![Español](https://img.shields.io/badge/🇪🇸-Español-yellow?style=for-the-badge)](README_ES.md)
+
+</p>
+
 西班牙语 OCR 文本清洗工具，主要用于清洗由 MinerU、OCR或PDF解析工具生成的Markdown文本。
 
 当前版本：v1.2.0
@@ -8,15 +18,24 @@
 
 TextCleaner 面向西班牙语学术文本、报告、书籍等OCR结果，帮助用户自动完成常见的文本清洗工作，例如：
 * 清理OCR识别后的多余空行、异常空格和格式噪声
-* 修复西班牙语文本中的断词问题
-* 处理Markdown文件中的常见排版残留
-* 支持拖放Markdown文件进行清洗
-* 支持批量处理output/mineru_raw/目录中的Markdown文件
-* 支持将大PDF拆分为较小文件，便于后续解析
+* 西班牙语断词修复：
+  跨行带连字符，例如situa-ción → situación
+  跨行不带连字符，例如situa\nción → situación
+  行内断词，例如geográfica → geográfica
+* 恢复部分丢失的西班牙语重音，例如politica → política
+* 删除脚注编号、注释编号
+* 删除公式块和公式噪音
+* 删除书籍/报告的前置封面、版权页、目录
+* 删除参考文献、Bibliografía、Notas、附录、广告、订阅页等与正文无关的内容
+* 支持拖放markdown文件进行清洗
+* 支持批量处理 markdown文件
+* PDF 辅助校对
+* 拆分大型pdf文件
+* 形符数统计
 
 ## 暂未开放的功能
 
-* 自动批量调用MInerU解析pdf
+* 自动批量调用MInerU解析pdf文件
 
 该功能目前仍存在已知问题，当前版本建议先手动使用MinerU解析PDF，再将生成的Markdown文件放入output/mineru_raw/中进行清洗
 
@@ -70,7 +89,7 @@ python3 -m pytest
 
 # 注意事项
 
-* 本工具主要针对西班牙语OCR文本设计，其他语言文本可能需要自行调整规则。
+* 本工具主要针对西班牙语OCR文本设计，其他语言文本需要自行调整规则。
 * OCR 结果质量会影响最终清洗效果。
 * 建议在批量处理前，先用少量文件进行测试。
 * 清洗后的文本仍建议人工检查，测试发现有误删情况发生，尤其是用于学术研究或语料库建设时。
