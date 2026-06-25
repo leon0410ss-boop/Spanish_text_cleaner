@@ -23,8 +23,10 @@
 TextCleaner 面向西班牙语学术文本、报告、书籍等OCR结果，帮助用户自动完成常见的文本清洗工作，例如：
 * 清理OCR识别后的多余空行、异常空格和格式噪声
 * 西班牙语断词修复：
+
   跨行带连字符，例如situa-ción → situación
   跨行不带连字符，例如situa\nción → situación
+
   行内断词，例如geográfica → geográfica
 * 恢复部分丢失的西班牙语重音，例如politica → política
 * 删除脚注编号、注释编号
