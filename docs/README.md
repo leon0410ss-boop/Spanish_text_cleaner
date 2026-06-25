@@ -2,11 +2,11 @@
 
 <p align="center">
 
-[![中文](https://img.shields.io/badge/🇨🇳-中文-red?style=for-the-badge)](README.md)
+[![中文](https://img.shields.io/badge/🇨🇳-中文-red?style=for-the-badge)](docs/README.md)
 
-[![English](https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge)](README_EN.md)
+[![English](https://img.shields.io/badge/🇺🇸-English-blue?style=for-the-badge)](docs/README_EN.md)
 
-[![Español](https://img.shields.io/badge/🇪🇸-Español-yellow?style=for-the-badge)](README_ES.md)
+[![Español](https://img.shields.io/badge/🇪🇸-Español-yellow?style=for-the-badge)](docs/README_ES.md)
 
 </p>
 
